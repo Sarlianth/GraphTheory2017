@@ -37,5 +37,14 @@ I am going to create all nodes seperately, and afterwards I will make relationsh
 The main node is going to be `MODULE`, as everything will be related to this particular node. 
 The structure of the model will look as follows: `Course` -has> `Semester` -has> `Module` (-thought_by-> Lecturer) -has> `Room` -have> `Day` -have> `Time`
 
+Lecturers are related to the modules they teach
+![lecturers-modules](https://cloud.githubusercontent.com/assets/10263556/25140864/95edcc1c-2459-11e7-94c4-d265f9dd8481.jpg)
+
+Course has different semesters (in our case, Software Development course contains 8 different semesters [4 years])
+![course-semesters](https://cloud.githubusercontent.com/assets/10263556/25140900/ba4865a4-2459-11e7-8e48-a85a78c05ce5.jpg)
+
+Each of the 8 semesters contains different modules
+![semester-module](https://cloud.githubusercontent.com/assets/10263556/25140921/cccf7e7e-2459-11e7-9a7e-39b552d9d57b.jpg)
+
 <h2>Data</h2>
 In order to obtain the data, I have used the official GMIT website: http://timetable.gmit.ie and I have just selected the years and semesters subsequently copying the data from the website. To obtain the data faster I have inspected the element on the website and then copied the outerHTML and pasting it into a text document.
