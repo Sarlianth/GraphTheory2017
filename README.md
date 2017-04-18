@@ -60,6 +60,7 @@ In commit number 10 I have decided to relate all the modules with corresponding 
 
 <h2>Finished graph</h2>
 The finished graph with relationships that I have designed looks as follows:
+
 ![graphtotal](https://cloud.githubusercontent.com/assets/10263556/25143994/50a75d16-2464-11e7-9508-ed8127fdb217.jpg)
 
 After I have created the graph and queried to display all, it does look kind of messy to me. If I was to approach this project again I think I would try to avoid representing time as relationship. However, I think the way I have designed it is clear enough to understand the graph and read the timetable off it.
