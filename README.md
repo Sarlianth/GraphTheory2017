@@ -36,3 +36,6 @@ I am going to create all nodes seperately, and afterwards I will make relationsh
 
 The main node is going to be `MODULE`, as everything will be related to this particular node. 
 The structure of the model will look as follows: `Course` -has> `Semester` -has> `Module` (-thought_by-> Lecturer) -has> `Room` -have> `Day` -have> `Time`
+
+<h2>Data</h2>
+In order to obtain the data, I have used the official GMIT website: http://timetable.gmit.ie and I have just selected the years and semesters subsequently copying the data from the website. To obtain the data faster I have inspected the element on the website and then copied the outerHTML and pasting it into a text document.
