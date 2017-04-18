@@ -49,7 +49,7 @@ Each of the 8 semesters contains different modules
 <h2>Data</h2>
 In order to obtain the data, I have used the official GMIT website: http://timetable.gmit.ie and I have just selected the years and semesters subsequently copying the data from the website. To obtain the data faster I have inspected the element on the website and then copied the outerHTML and pasting it into a text document.
 
-<h3>Commit 10</h3>
+<h2>Commit 10</h2>
 In commit number 10 I have decided to relate all the modules with corresponding rooms, so that I could see some progress when I query the database. The graph below represents what the database looks like at the moment (I did not relate days monday-friday and corresponding times to the rooms yet).
 
 ![database](https://cloud.githubusercontent.com/assets/10263556/25142330/6af0706e-245e-11e7-821e-3d4ba18be928.jpg)
