@@ -51,4 +51,5 @@ In order to obtain the data, I have used the official GMIT website: http://timet
 
 <h3>Commit 10</h3>
 In commit number 10 I have decided to relate all the modules with corresponding rooms, so that I could see some progress when I query the database. The graph below represents what the database looks like at the moment (I did not relate days monday-friday and corresponding times to the rooms yet).
+
 ![database](https://cloud.githubusercontent.com/assets/10263556/25142330/6af0706e-245e-11e7-821e-3d4ba18be928.jpg)
