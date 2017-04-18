@@ -26,3 +26,13 @@ for various tasks, such as optimising timetables, will be provided.
 Sponsored by Neo Technology, Neo4j is an open-source NoSQL graph database implemented in Java and Scala. With development starting in 2003, it has been publicly available since 2007. The source code and issue tracking are available on GitHub, with support readily available on Stack Overflow and the Neo4j Google group. Neo4j is used today by hundreds of thousands of companies and organizations in almost all industries. Use cases include matchmaking, network management, software analytics, scientific research, routing, organizational and project management, recommendations, social networks, and more.
 
 ![graphmodel](https://cloud.githubusercontent.com/assets/10263556/25135725/0c814e94-244b-11e7-939f-6ebee1122a08.jpg)
+
+<h2>Database Design</h2>
+I have been thinking and planning how I should design the database so it's very easy to understand and refer to. In the diagrams that I have created below I would like to show you how I decided to design it.
+
+![graph](https://cloud.githubusercontent.com/assets/10263556/25136943/43928e2c-244e-11e7-9e9c-e9a8a537e133.jpg)
+
+I am going to create all nodes seperately, and afterwards I will make relationships between them.
+
+The main node is going to be MODULE, as everything will be related to this particular node. 
+The structure of the model will look as follows: Course -has> Semester -has> Module (-thought_by-> Lecturer) -has> Room -have> Day -have> Time
