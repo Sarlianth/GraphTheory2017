@@ -49,7 +49,35 @@ Each of the 8 semesters contains different modules
 <h2>Data</h2>
 In order to obtain the data, I have used the official GMIT website: http://timetable.gmit.ie and I have just selected the years and semesters subsequently copying the data from the website. To obtain the data faster I have inspected the element on the website and then copied the outerHTML and pasting it into a text document.
 
+![timetable](https://cloud.githubusercontent.com/assets/10263556/25144820/06ecb164-2467-11e7-9c52-2e3991e1bdeb.jpg)
+
+All the data that I have used for this project has been obtained from the timetable above.
+
 <h2>Commit 10</h2>
 In commit number 10 I have decided to relate all the modules with corresponding rooms, so that I could see some progress when I query the database. The graph below represents what the database looks like at the moment (I did not relate days monday-friday and corresponding times to the rooms yet).
 
 ![database](https://cloud.githubusercontent.com/assets/10263556/25142330/6af0706e-245e-11e7-821e-3d4ba18be928.jpg)
+
+<h2>Finished graph</h2>
+The finished graph with relationships that I have designed looks as follows:
+![graphtotal](https://cloud.githubusercontent.com/assets/10263556/25143994/50a75d16-2464-11e7-9508-ed8127fdb217.jpg)
+
+After I have created the graph and queried to display all, it does look kind of messy to me. If I was to approach this project again I think I would try to avoid representing time as relationship. However, I think the way I have designed it is clear enough to understand the graph and read the timetable off it.
+
+<h2>Cypher commands</h2>
+To return all nodes and see the complete graph use the following: 
+> MATCH (n) RETURN n
+
+To delete all the nodes also with relationships 
+> MATCH (n) DETACH DELETE n
+
+To delete a node with X ID 
+> MATCH (n) WHERE id(n) = X DETACH DELETE n
+
+To create relationships between nodes
+> MATCH (u:User {username:'admin'}), (r:Role {name:'ROLE_WEB_USER'}) CREATE (u)-[:HAS_ROLE]->(r)
+
+To update existing node
+> merge (n:Node {name: 'John'})
+> set n += {age: 34, coat: 'Yellow'}
+> return n 
