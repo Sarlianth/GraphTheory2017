@@ -66,7 +66,7 @@ The finished graph with relationships that I have designed looks as follows:
 After I have created the graph and queried to display all, it does look kind of messy to me. If I was to approach this project again I think I would try to avoid representing time as relationship. However, I think the way I have designed it is clear enough to understand the graph and read the timetable off it.
 
 <h2>Cypher commands</h2>
-To return all nodes and see the complete graph use the following: 
+To return all nodes and see the complete graph
 > MATCH (n) RETURN n
 
 To delete all the nodes also with relationships 
