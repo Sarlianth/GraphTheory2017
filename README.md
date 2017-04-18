@@ -34,5 +34,5 @@ I have been thinking and planning how I should design the database so it's very 
 
 I am going to create all nodes seperately, and afterwards I will make relationships between them.
 
-The main node is going to be MODULE, as everything will be related to this particular node. 
-The structure of the model will look as follows: Course -has> Semester -has> Module (-thought_by-> Lecturer) -has> Room -have> Day -have> Time
+The main node is going to be `MODULE`, as everything will be related to this particular node. 
+The structure of the model will look as follows: `Course` -has> `Semester` -has> `Module` (-thought_by-> Lecturer) -has> `Room` -have> `Day` -have> `Time`
