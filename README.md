@@ -83,3 +83,38 @@ To update existing node
 > merge (n:Node {name: 'John'})
 > set n += {age: 34, coat: 'Yellow'}
 > return n 
+
+Creating a department called Science:
+```cypher
+create (a:Department { name: "Science"})
+```
+
+Create a course called Software Development
+```cypher
+create (a:Course { name:"Software Development" })
+```
+
+Creating a relationship between the two nodes
+```cypher
+match (a:Department),(b:Course) where a.name = "Science" and b.name = "Software Development" create (a)-[r:Contains]->(b)
+```
+
+Create a module taught by XX lecturer
+```cypher
+create (a:Module { name: "Graph Theory", Lecturer: "Ian McLoughlin" })
+```
+
+Create a relationship between the course and a module
+```cypher
+match (a:Course),(b:Module) where a.name = "Software Development" and b.name = "Graph Theory" create (a)-[r:Contains]->(b)
+```
+Create all the different modules and add relationships between modules and course
+```cypher
+match (a:Course) where a.name = "Software Development" 
+create (b:Module { name: "Database Management Systems", Lecturer: "Deirdre O'Donovan"}), 
+(c:Module { name: "Mobile Applications Development 2", Lecturer: "Damian Costello"}), 
+(d:Module { name: "Software Testing", Lecturer: "Martin Hynes"}), 
+(e:Module { name: "Server Side Rad", Lecturer: "Gerard Harrison"}), 
+(f:Module { name: "Professional Practice In IT", Lecturer: "Damian Costello"}), 
+(a)-[:Contains]->(b), (a)-[:Contains]->(c), (a)-[:Contains]->(d), (a)-[:Contains]->(e), (a)-[:Contains]->(f)
+```
