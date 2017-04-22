@@ -67,6 +67,7 @@ After I have created the graph and queried to display all, it does look kind of 
 
 <h2>Cypher commands</h2>
 To return all nodes and see the complete graph
+
 ```cypher
 MATCH (n) RETURN n
 ```
