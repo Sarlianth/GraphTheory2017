@@ -67,22 +67,31 @@ After I have created the graph and queried to display all, it does look kind of 
 
 <h2>Cypher commands</h2>
 To return all nodes and see the complete graph
-
-> MATCH (n) RETURN n
+```cypher
+MATCH (n) RETURN n
+```
 
 To delete all the nodes also with relationships 
-> MATCH (n) DETACH DELETE n
+```cypher
+MATCH (n) DETACH DELETE n
+```
 
 To delete a node with X ID 
-> MATCH (n) WHERE id(n) = X DETACH DELETE n
+```cypher
+MATCH (n) WHERE id(n) = X DETACH DELETE n
+```
 
 To create relationships between nodes
-> MATCH (u:User {username:'admin'}), (r:Role {name:'ROLE_WEB_USER'}) CREATE (u)-[:HAS_ROLE]->(r)
+```cypher
+MATCH (u:User {username:'admin'}), (r:Role {name:'ROLE_WEB_USER'}) CREATE (u)-[:HAS_ROLE]->(r)
+```
 
 To update existing node
-> merge (n:Node {name: 'John'})
-> set n += {age: 34, coat: 'Yellow'}
-> return n 
+```cypher
+merge (n:Node {name: 'John'})
+set n += {age: 34, coat: 'Yellow'}
+return n 
+```
 
 Creating a department called Science:
 ```cypher
